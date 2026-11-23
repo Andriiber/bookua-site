@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookUA - Книжкова бібліотека онлайн</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Стилі Swiper.js (CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Flex-Header + Кнопка модального вікна + Кнопка Гамбургер -->
+        <header class="flex-header">
+            <div class="logo-group">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Логотип магазину BookUA">
+                </a>
+                <div>
+                    <h1>BookUA</h1>
+                    <p>Твій провідник у світ літератури</p>
+                </div>
+            </div>
+            
+            <!-- Звичайне меню (ховається на мобільних) -->
+            <nav class="main-menu">
+                <ul>
+                    <li>📍 <strong>Головна</strong></li>
+                    <li><a href="books.html">Книги</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                    <li><a href="info.html">Довідка (FAQ)</a></li>
+                    <li><a href="price.html">Підписка</a></li>
+                </ul>
+            </nav>
+
+            <!-- ЛР №15: Кнопка виклику модального вікна -->
+            <button id="open-modal-btn" class="modal-trigger-btn">Зв'язатися з нами</button>
+
+            <!-- Кнопка "Гамбургер" -->
+            <button class="hamburger" aria-label="Меню">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </header>
+
+        <!-- Мобільне меню, що виїжджає збоку -->
+        <nav class="mobile-menu">
+            <a href="index.html">Головна</a>
+            <a href="books.html">Книги</a>
+            <a href="contacts.html">Контакти</a>
+            <a href="info.html">Довідка (FAQ)</a>
+            <a href="price.html">Підписка</a>
+        </nav>
+
+        <main>
+            <section class="about-us" style="text-align: left;">
+                <h2>Ласкаво просимо до вільного світу книг!</h2>
+                <img src="img/logo.png" alt="BookUA" class="float-img">
+                <p>На нашому порталі ви знайдете тисячі творів у зручних для вас форматах. BookUA — це сучасний простір для тих, хто не уявляє свого життя без літератури. Ми зібрали для вас найкращі твори українських та світових авторів.</p>
+                <p>Читання розширює кругозір, розвиває уяву та допомагає відволіктися від повсякденних турбот. У нашій бібліотеці є все: від світової класики до сучасних бестселерів, від наукової фантастики до бізнес-книг.</p>
+                <p>Приєднуйтесь до нашої великої спільноти читачів! Обирайте формат, який підходить саме вам, та отримуйте необмежений доступ до найкращої літератури.</p>
+                <div style="clear: both;"></div>
+
+                <!-- Крок 1 (ЛР №13): Анімація "Scroll Down" -->
+                <div class="scroll-down">
+                    <span>↓</span>
+                </div>
+            </section>
+            
+            <!-- Flex-картки переваг -->
+            <section class="features">
+                <div class="feature-card">
+                    <h3>📚 Великий вибір</h3>
+                    <p>Широкий асортимент новинок та світової класики для кожного.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📱 Зручні формати</h3>
+                    <p>Читайте онлайн, слухайте аудіокниги або завантажуйте файли.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💎 Ексклюзив</h3>
+                    <p>Унікальні колекційні видання, які ви не знайдете більше ніде.</p>
+                </div>
+            </section>
+
+            <!-- ЛР №15: Секція з табами (вкладками) -->
+            <section class="tabs-container">
+                <h2>Детальніше про книгу тижня: «Дюна»</h2>
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="desc">Опис</button>
+                    <button class="tab-btn" data-tab="chars">Характеристики</button>
+                    <button class="tab-btn" data-tab="reviews">Відгуки</button>
+                </div>
+                <div class="tabs-body">
+                    <div id="desc" class="tab-content active">
+                        <p>Культовий науково-фантастичний роман Френка Герберта про пустельну планету Арракіс, боротьбу за найцінніший ресурс Всесвіту — прянощі, та долю Пола Атріда.</p>
+                    </div>
+                    <div id="chars" class="tab-content">
+                        <ul>
+                            <li>Автор: Френк Герберт</li>
+                            <li>Формати: EPUB, PDF, FB2, Аудіокнига</li>
+                            <li>Мова: Українська</li>
+                            <li>Обсяг: 656 сторінок</li>
+                        </ul>
+                    </div>
+                    <div id="reviews" class="tab-content">
+                        <p>«Шедевр світової фантастики. Зручно, що на BookUA можна перемикатися між текстом і аудіоверсією.» — Оцінка: 5/5</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Крок 1-2 (ЛР №12): CSS Grid Галерея -->
+            <section>
+                <h2>Атмосфера та бестселери BookUA</h2>
+                <div class="gallery">
+                    <div class="gallery-item item-1">
+                        <img src="img/gallery1.jpg" alt="Бібліотека BookUA">
+                    </div>
+                    <div class="gallery-item item-2">
+                        <img src="img/duna.webp" alt="Дюна">
+                    </div>
+                    <div class="gallery-item item-3">
+                        <img src="img/potter.png" alt="Гаррі Поттер">
+                    </div>
+                    <div class="gallery-item item-4">
+                        <img src="img/internat_jadan.webp" alt="Інтернат">
+                    </div>
+                    <div class="gallery-item item-5">
+                        <img src="img/gallery2.jpg" alt="Читання книг">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Крок 5 (ЛР №13): Слайдер Swiper.js з анімацією тексту -->
+            <section class="reviews-section">
+                <h2>Відгуки наших читачів</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="stars">★★★★★</div>
+                            <h2>Олександр К.</h2>
+                            <p>«Найзручніша онлайн-бібліотека! Завантажив "Дюну" в EPUB за секунду, читається ідеально.»</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="stars">★★★★★</div>
+                            <h2>Марія В.</h2>
+                            <p>«Дуже круті аудіокниги, особливо "Гаррі Поттер". Слухаю щодня дорогою на навчання.»</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="stars">★★★★★</div>
+                            <h2>Дмитро С.</h2>
+                            <p>«Сучасна українська проза завжди в топі. Оформив преміум-підписку і ні разу не пошкодував.»</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="stars">★★★★★</div>
+                            <h2>Анна П.</h2>
+                            <p>«Приємний дизайн сайту, нічого зайвого. Підтримка відповіла за 5 хвилин і допомогла з файлом.»</p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            
+            <section>
+                <h2>Популярні категорії</h2>
+                <ol>
+                    <li>Сучасна українська література</li>
+                    <li>Світова класика</li>
+                    <li>Наукова фантастика та фентезі</li>
+                    <li>Бізнес та саморозвиток</li>
+                </ol>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Контакти:</p>
+            <p>Email: <a href="mailto:info@bookua.com.ua">info@bookua.com.ua</a><br>
+            Телефон: <a href="tel:+380983927734">+38 (098) 392-77-34</a></p>
+            <p>© 2026 BookUA. Всі права захищені.</p>
+        </footer>
+
+        <a href="#" class="back-to-top">↑</a>
+    </div>
+
+    <!-- ЛР №15: Модальне вікно -->
+    <div class="modal-overlay" id="my-modal">
+        <div class="modal-window">
+            <span class="close-modal">&times;</span>
+            <h2>Залиште заявку</h2>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Ваше ім'я" required>
+                <input type="tel" placeholder="Ваш телефон" required>
+                <button type="submit">Надіслати</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Скрипт Swiper.js (CDN) та наш файл ініціалізації -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

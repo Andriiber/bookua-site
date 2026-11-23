@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookUA — Послуги (Bootstrap 5)</title>
+    <!-- Bootstrap 5 CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome 6 (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Крок 3: Стилізація інтерактивного SVG */
+        .my-svg-icon {
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .my-svg-icon:hover circle {
+            fill: #dc3545; /* Зміна кольору на червоний при наведенні */
+            stroke: #dc3545;
+            transform: scale(1.1);
+            transform-origin: center;
+        }
+        .my-svg-icon:hover path {
+            fill: #ffffff;
+        }
+    </style>
+</head>
+<!-- Крок 4: Sticky Footer через Flex-утиліти Bootstrap -->
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <!-- Навігація на Bootstrap -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <i class="fa-solid fa-book-open text-warning me-2"></i>BookUA
+                </a>
+                <a href="index.html" class="btn btn-outline-warning btn-sm">Повернутися на головну</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Крок 2: Сітка карток на Bootstrap (Grid + Cards + FontAwesome) -->
+        <div class="container mt-5">
+            <h2 class="text-center mb-4 fw-bold">Наші послуги (Bootstrap 5)</h2>
+            
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-book-open-reader fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Читання онлайн</h5>
+                            <p class="card-text">Зручний веб-рідер із нічним режимом, закладками та налаштуванням шрифту.</p>
+                            <a href="books.html" class="btn btn-primary">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-headphones fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title fw-bold">Аудіокниги</h5>
+                            <p class="card-text">Професійна озвучка бестселерів для прослуховування в дорозі чи на прогулянці.</p>
+                            <a href="books.html" class="btn btn-warning text-white">Слухати</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-cloud-arrow-down fa-3x text-success mb-3"></i>
+                            <h5 class="card-title fw-bold">Завантаження</h5>
+                            <p class="card-text">Доступ до файлів у форматах PDF, EPUB та FB2 для читання без інтернету.</p>
+                            <a href="price.html" class="btn btn-success">Обрати тариф</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Крок 3: Інтерактивне Inline SVG -->
+        <div class="container text-center my-5">
+            <h3 class="mb-3">Інтерактивне SVG лого (наведіть курсор)</h3>
+            <svg class="my-svg-icon" width="110" height="110" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="40" stroke="#2c3e50" stroke-width="3" fill="#ffc107" />
+                <path d="M35 35 H50 V65 H35 Z M50 35 H65 V65 H50 Z" fill="#2c3e50" stroke="#2c3e50" stroke-width="2" />
+            </svg>
+        </div>
+    </main>
+
+    <!-- Крок 4: Притиснутий футер (mt-auto) -->
+    <footer class="mt-auto bg-dark text-white p-3 text-center">
+        &copy; 2026 BookUA. Всі права захищені.
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookUA - Підписка</title>
+    <!-- Підключення шрифту Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Підключення власного файлу стилів -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Крок 1 (ЛР №11): Flex-Header (Шапка і меню в одному ряду) -->
+        <header class="flex-header">
+            <div class="logo-group">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Логотип магазину BookUA">
+                </a>
+                <div>
+                    <h1>BookUA</h1>
+                    <p>Твій провідник у світ літератури</p>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="books.html">Книги</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                    <li><a href="info.html">Довідка (FAQ)</a></li>
+                    <li>📍 <strong>Підписка</strong></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Тарифи на преміум-доступ</h2>
+                <p>Оберіть найкращий варіант для комфортного читання без обмежень.</p>
+                <table border="1" width="100%" cellpadding="10" cellspacing="0">  <!-- Таблиця 1 Прайс-лист з thead tbody tfoot colspan -->
+                    <caption>Ціни на преміум-підписку</caption>
+                    <thead>
+                        <tr>
+                            <th>Назва тарифу</th>
+                            <th>Кількість пристроїв</th>
+                            <th>Ціна (грн/місяць)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Базовий (Без реклами)</td>
+                            <td>1</td>
+                            <td>99</td>
+                        </tr>
+                        <tr>
+                            <td>Сімейний</td>
+                            <td>до 5</td>
+                            <td>249</td>
+                        </tr>
+                        <tr>
+                            <td>Максимальний (Аудіо+Текст)</td>
+                            <td>до 3</td>
+                            <td>299</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"><strong>Економія при оплаті за рік:</strong></td>
+                            <td><strong>20%</strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <section>
+                <h2>Графік роботи служби підтримки</h2>
+                <p>Якщо у вас виникли проблеми з підпискою, звертайтеся за нашим графіком.</p>
+                <table border="1" width="100%" cellpadding="10" cellspacing="0">    <!-- Таблиця 2 Складна структура з rowspan -->
+                    <tr>
+                        <th>День тижня</th>
+                        <th>Години роботи</th>
+                        <th>Технічна перерва</th>
+                    </tr>
+                    <tr>
+                        <td>Понеділок</td>
+                        <td>09:00 - 18:00</td>
+                        <td rowspan="5">13:00 - 14:00</td> 
+                    </tr>
+                    <tr>
+                        <td>Вівторок</td>
+                        <td>09:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Середа</td>
+                        <td>09:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Четвер</td>
+                        <td>09:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>П'ятниця</td>
+                        <td>09:00 - 17:00</td>
+                    </tr>
+                    <tr>
+                        <td>Субота - Неділя</td>
+                        <td>Вихідні дні</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+            <p>Ми в соцмережах:</p>
+            <ul>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            </ul>
+            <p>© 2026 BookUA. Всі права захищені.</p>
+        </footer>
+        
+        <!-- Кнопка Вгору -->
+        <a href="#" class="back-to-top">↑</a>
+    </div>
+</body>
+</html>

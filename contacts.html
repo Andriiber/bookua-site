@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookUA - Контакти</title>
+    <!-- Підключення шрифту Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Підключення власного файлу стилів -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Крок 1 (ЛР №11): Flex-Header (Шапка і меню в одному ряду) -->
+        <header class="flex-header">
+            <div class="logo-group">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Логотип магазину BookUA">
+                </a>
+                <div>
+                    <h1>BookUA</h1>
+                    <p>Твій провідник у світ літератури</p>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="books.html">Книги</a></li>
+                    <li>📍 <strong>Контакти</strong></li>
+                    <li><a href="info.html">Довідка (FAQ)</a></li>
+                    <li><a href="price.html">Підписка</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Технічна підтримка</h2>
+                <p>Виникли проблеми із завантаженням файлів чи відтворенням аудіокниг? Напишіть нам, і ми швидко все виправимо!</p>
+                
+                <p>
+                    📞 Гаряча лінія: <a href="tel:+380983927734">+38 (098) 392-77-34</a>
+                </p>
+                <p>
+                    ✉️ Email підтримки: <a href="mailto:support@bookua.com.ua">support@bookua.com.ua</a>
+                </p>
+            </section>
+
+            <section>
+                <h2>Напишіть нам</h2>
+                <p>Залишилися питання щодо роботи бібліотеки? Заповніть форму нижче:</p>
+                
+                <form action="#" method="POST">
+                    <div>
+                        <label for="username">Ваше ім'я:</label><br>
+                        <input type="text" id="username" name="username" placeholder="Введіть ім'я" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="useremail">Ваш Email:</label><br>
+                        <input type="email" id="useremail" name="useremail" placeholder="example@mail.com" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="userpass">Пароль (для створення кабінету читача):</label><br>
+                        <input type="password" id="userpass" name="password">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="topic">Тема звернення:</label>
+                        <select id="topic" name="topic">
+                            <option value="support">Техпідтримка</option>
+                            <option value="book_request">Запит на нову книгу</option>
+                            <option value="other">Інше</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <p>Ваша стать:</p>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Чоловік</label>
+                        
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Жінка</label>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="message">Повідомлення:</label><br>
+                        <textarea id="message" name="message" rows="5" cols="30" placeholder="Напишіть ваш текст тут..."></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <label for="agree">Я даю згоду на обробку даних</label>
+                    </div>
+                    <br>
+                    <button type="submit">Надіслати</button>
+                    <button type="reset">Очистити</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Ми в соцмережах:</p>
+            <ul>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            </ul>
+            <p>© 2026 BookUA. Всі права захищені.</p>
+        </footer>
+        
+        <!-- Кнопка Вгору -->
+        <a href="#" class="back-to-top">↑</a>
+    </div>
+</body>
+</html>

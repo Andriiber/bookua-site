@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookUA - Книги</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Крок 1 (ЛР №11): Flex-Header (Шапка і меню в одному ряду) -->
+        <header class="flex-header">
+            <div class="logo-group">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Логотип магазину BookUA">
+                </a>
+                <div>
+                    <h1>BookUA</h1>
+                    <p>Твій провідник у світ літератури</p>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li>📍<strong>Книги</strong></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                    <li><a href="info.html">Довідка (FAQ)</a></li>
+                    <li><a href="price.html">Підписка</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Популярні надходження</h2>
+                
+                <!-- Крок 3 (ЛР №11): Галерея товарів (Flex Wrap) -->
+                <div class="catalog">
+                    <div class="product-item">
+                        <span class="badge sale">Sale!</span>
+                        <img src="img/duna.webp" alt="Дюна">
+                        <h3>Дюна</h3>
+                        <p>Фентезі, Наукова фантастика</p>
+                        <a href="read.html" class="btn">Читати онлайн</a>
+                    </div>
+                    
+                    <div class="product-item">
+                        <img src="img/potter.png" alt="Гаррі Поттер">
+                        <h3>Гаррі Поттер</h3>
+                        <p>Аудіокнига, Фентезі</p>
+                        <a href="audio.html" class="btn">Слухати</a>
+                    </div>
+
+                    <div class="product-item">
+                        <span class="badge new">New!</span>
+                        <img src="img/internat_jadan.webp" alt="Інтернат">
+                        <h3>Інтернат (Жадан)</h3>
+                        <p>Сучасна проза</p>
+                        <a href="files/book.pdf" download class="btn">Завантажити PDF</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Ми в соцмережах:</p>
+            <ul>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            </ul>
+            <p>© 2026 BookUA. Всі права захищені.</p>
+        </footer>
+        
+        <!-- Кнопка Вгору -->
+        <a href="#" class="back-to-top">↑</a>
+    </div>
+</body>
+</html>
